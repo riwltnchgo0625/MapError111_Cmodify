@@ -11,6 +11,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import android.os.Bundle;
 import android.view.MenuItem;
 
+import com.example.busanapp.calendar.CalendarFragment;
 import com.example.busanapp.ui.home.FindFoodFragment;
 import com.example.busanapp.ui.home.FoodFragment;
 import com.example.busanapp.home.HomeFragment;
@@ -56,9 +57,6 @@ public class LoadingActivity extends AppCompatActivity implements NavigationView
                 getSupportFragmentManager().beginTransaction().replace(R.id.hospitalFragment, fragment1).commit();
             }
         });*/
-
-
-
 
 
         if (savedInstanceState == null) {
@@ -119,7 +117,12 @@ public class LoadingActivity extends AppCompatActivity implements NavigationView
                         new PublicartFragment()).commit();
                 break;
 
-            case R.id.nav_map :
+            case R.id.nav_calendar:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+                        new CalendarFragment()).commit();
+                break;
+
+            case R.id.nav_map:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new MapFragment()).commit();
                 break;

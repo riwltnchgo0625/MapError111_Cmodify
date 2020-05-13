@@ -10,44 +10,44 @@
             android:icon="@drawable/ic_home_black_24dp"
             android:title="@string/menu_home" />
 
-        <item
-            android:id="@+id/nav_calendar"
-            android:icon="@drawable/ic_calendar_black"
-            android:title="@string/menu_calendar" />
-
     </group>
 
     <item android:title="편의시설">
 
         <menu>
             <item
+                android:id="@+id/nav_calendar"
+                android:icon="@drawable/ic_calendar_black"
+                android:title="@string/menu_calendar" />
+
+            <item
                 android:id="@+id/nav_hospital"
+                android:checkable="true"
                 android:icon="@drawable/ic_local_hospital_black_24dp"
-                android:title="병원"
-                android:checkable="true"/>
+                android:title="병원" />
             <item
                 android:id="@+id/nav_find_hospital"
+                android:checkable="true"
                 android:icon="@drawable/ic_find_hospital"
-                android:title="병원 검색하기"
-                android:checkable="true"/>
+                android:title="병원 검색하기" />
 
             <item
                 android:id="@+id/nav_parking"
+                android:checkable="true"
                 android:icon="@drawable/ic_local_parking_black_24dp"
-                android:title="공영 주차장"
-                android:checkable="true"/>
+                android:title="공영 주차장" />
 
             <item
                 android:id="@+id/nav_bus"
+                android:checkable="true"
                 android:icon="@drawable/ic_directions_bus_black_24dp"
-                android:title="버스"
-                android:checkable="true"/>
+                android:title="버스" />
 
             <item
                 android:id="@+id/nav_disabled_person"
+                android:checkable="true"
                 android:icon="@drawable/ic_disabled_person"
-                android:title="장애인 편의시설 보유 업소"
-                android:checkable="true"/>
+                android:title="장애인 편의시설 보유 업소" />
         </menu>
 
     </item>
@@ -57,15 +57,15 @@
         <menu>
             <item
                 android:id="@+id/nav_food"
+                android:checkable="true"
                 android:icon="@drawable/ic_food"
-                android:title="모범음식점"
-                android:checkable="true"/>
+                android:title="모범음식점" />
 
             <item
                 android:id="@+id/nav_find_food"
+                android:checkable="true"
                 android:icon="@drawable/ic_find_food"
-                android:title="모범음식점 검색하기"
-                android:checkable="true"/>
+                android:title="모범음식점 검색하기" />
 
         </menu>
 
@@ -76,14 +76,14 @@
         <menu>
             <item
                 android:id="@+id/nav_publicart"
+                android:checkable="true"
                 android:icon="@drawable/ic_publicart"
-                android:title="공공조형물"
-                android:checkable="true"/>
+                android:title="공공조형물" />
             <item
                 android:id="@+id/nav_storytelling"
+                android:checkable="true"
                 android:icon="@drawable/ic_stroytelling"
-                android:title="스토리텔링 원형정보"
-                android:checkable="true"/>
+                android:title="스토리텔링 원형정보" />
         </menu>
 
     </item>
@@ -93,9 +93,9 @@
         <menu>
             <item
                 android:id="@+id/nav_map"
+                android:checkable="true"
                 android:icon="@drawable/ic_map"
-                android:title="지도"
-                android:checkable="true"/>
+                android:title="지도" />
 
         </menu>
 
