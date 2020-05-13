@@ -12,14 +12,18 @@
 
     </group>
 
-    <item android:title="편의시설">
-
+    <item android:title="@string/menu_calendar">
         <menu>
             <item
                 android:id="@+id/nav_calendar"
                 android:icon="@drawable/ic_calendar_black"
                 android:title="@string/menu_calendar" />
+        </menu>
+    </item>
 
+    <item android:title="편의시설">
+
+        <menu>
             <item
                 android:id="@+id/nav_hospital"
                 android:checkable="true"
