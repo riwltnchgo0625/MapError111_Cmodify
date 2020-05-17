@@ -28,7 +28,7 @@ public class FindHospitalFragment extends Fragment {
     TextView text;
     Button btn;
 
-    String Key = "NO2EbE%2Bu5KtWhuLp1rQALIAtWWnRDgj9mCuelgBAxRS%2Frxi12vyAMLBp%2F3KEanPiRfbO3hwggbbpZ%2B0XtKIolQ%3D%3D";
+    String Key = "h0iKgTJif3T4juiw3eVVAZnw0dfs6YFSEbr%2F25P6a0HG%2FBeLxtWgQL7w8%2BaXKEo6uiHUHOXabtpguDeAXcMGIw%3D%3D";
     String data;
 
     public FindHospitalFragment() {
@@ -76,27 +76,7 @@ public class FindHospitalFragment extends Fragment {
 
         return view;
     }
-/*
-    public void mOnClick(View v) {
-        switch (v.getId()) {
-            case R.id.button:
 
-                new Thread(new Runnable() {
-                    @Override
-                    public void run() {
-                        data = getXmlData();
-
-                        getActivity().runOnUiThread(new Runnable() {
-                            @Override
-                            public void run() {
-                                text.setText(data);
-                            }
-                        });
-                    }
-                }).start();
-                break;
-        }
-    }   */
 
     String getXmlData() {
         StringBuffer buffer = new StringBuffer();

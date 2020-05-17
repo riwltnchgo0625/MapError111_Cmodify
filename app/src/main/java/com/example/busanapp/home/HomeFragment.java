@@ -16,6 +16,8 @@ public class HomeFragment extends Fragment {
     private ImageAdapter adapter = new ImageAdapter();
     private RecyclerView recyclerView;
 
+
+
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 

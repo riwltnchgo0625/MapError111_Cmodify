@@ -12,13 +12,15 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.example.busanapp.calendar.CalendarFragment;
+import com.example.busanapp.navermap.MapFragment;
 import com.example.busanapp.ui.home.FindFoodFragment;
 import com.example.busanapp.ui.home.FoodFragment;
 import com.example.busanapp.home.HomeFragment;
 import com.example.busanapp.ui.home.PublicartFragment;
 import com.example.busanapp.ui.home.StorytellingFragment;
+import com.google.android.gms.maps.GoogleMap;
 import com.google.android.material.navigation.NavigationView;
-import com.naver.maps.map.MapFragment;
+
 
 public class LoadingActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     //HomeFragment fragment1;
@@ -41,23 +43,6 @@ public class LoadingActivity extends AppCompatActivity implements NavigationView
                 R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
-
-        /*Button hosbtn = (Button)findViewById(R.id.hosbtn);
-        hosbtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment1).commit();
-            }
-        });*/
-
-        /*Button hosbtn = (Button)findViewById(R.id.hosbtn);
-        hosbtn.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-                getSupportFragmentManager().beginTransaction().replace(R.id.hospitalFragment, fragment1).commit();
-            }
-        });*/
-
 
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
@@ -134,6 +119,7 @@ public class LoadingActivity extends AppCompatActivity implements NavigationView
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
 
     @Override
     public void onBackPressed() {

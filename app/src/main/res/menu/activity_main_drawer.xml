@@ -27,7 +27,7 @@
             <item
                 android:id="@+id/nav_hospital"
                 android:checkable="true"
-                android:icon="@drawable/ic_local_hospital_black_24dp"
+                android:icon="@drawable/hospital_color"
                 android:title="병원" />
             <item
                 android:id="@+id/nav_find_hospital"

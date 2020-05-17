@@ -51,7 +51,9 @@ public class HospitalFragment extends Fragment {
 
 
         try{
-            URL url = new URL("http://apis.data.go.kr/6260000/MedicInstitService/MedicalInstitInfo?serviceKey=NO2EbE%2Bu5KtWhuLp1rQALIAtWWnRDgj9mCuelgBAxRS%2Frxi12vyAMLBp%2F3KEanPiRfbO3hwggbbpZ%2B0XtKIolQ%3D%3D&numOfRows=5&pageNo=1");
+            URL url = new URL("http://apis.data.go.kr/6260000/MedicInstitService/MedicalInstitInfo?" +
+                    "serviceKey=h0iKgTJif3T4juiw3eVVAZnw0dfs6YFSEbr%2F25P6a0HG%2FBeLxtWgQL7w8%2BaXKEo6uiHUHOXabtpguDeAXcMGIw%3D%3D" +
+                    "&pageNo=1&numOfRows=10");
 
             //검색 URL부분
 
