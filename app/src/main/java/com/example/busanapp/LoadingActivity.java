@@ -12,13 +12,16 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.example.busanapp.calendar.CalendarFragment;
-import com.example.busanapp.navermap.MapFragment;
+import com.example.busanapp.ui.home.BusFragment;
+import com.example.busanapp.ui.home.DisabledFragment;
 import com.example.busanapp.ui.home.FindFoodFragment;
+import com.example.busanapp.ui.home.FindHospitalFragment;
 import com.example.busanapp.ui.home.FoodFragment;
 import com.example.busanapp.home.HomeFragment;
+import com.example.busanapp.ui.home.HosMapFragment;
+import com.example.busanapp.ui.home.HospitalFragment;
+import com.example.busanapp.ui.home.ParkingFragment;
 import com.example.busanapp.ui.home.PublicartFragment;
-import com.example.busanapp.ui.home.StorytellingFragment;
-import com.google.android.gms.maps.GoogleMap;
 import com.google.android.material.navigation.NavigationView;
 
 
@@ -92,10 +95,6 @@ public class LoadingActivity extends AppCompatActivity implements NavigationView
                         new FindFoodFragment()).commit();
                 break;
 
-            case R.id.nav_storytelling:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new StorytellingFragment()).commit();
-                break;
 
             case R.id.nav_publicart:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
@@ -109,7 +108,7 @@ public class LoadingActivity extends AppCompatActivity implements NavigationView
 
             case R.id.nav_map:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
-                        new MapFragment()).commit();
+                        new HosMapFragment()).commit();
                 break;
             default:
                 break;

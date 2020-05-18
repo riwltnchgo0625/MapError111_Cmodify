@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:id="@+id/layout_main"
     android:orientation="vertical"
+    android:id="@+id/layout_main"
     tools:context=".MainActivity" >
 
     <fragment
@@ -14,12 +14,16 @@
         android:id="@+id/map"
         tools:context=".MapsActivity"
         android:name="com.google.android.gms.maps.SupportMapFragment" />
-
     <Button
-        android:text="장소검색"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.2"
+        android:text="장소 검색"
         android:id="@+id/button"/>
 
+
 </LinearLayout>
+
+
+
+

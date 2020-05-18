@@ -1,4 +1,4 @@
-package com.example.busanapp;
+package com.example.busanapp.ui.home;
 
 import android.os.Bundle;
 import android.os.StrictMode;
@@ -12,6 +12,8 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
+import com.example.busanapp.R;
 
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserFactory;

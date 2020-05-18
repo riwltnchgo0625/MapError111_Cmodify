@@ -32,17 +32,17 @@
 
     <fragment
         android:id="@+id/hospitalFragment"
-        android:name="com.example.busanapp.HospitalFragment"
+        android:name="com.example.busanapp.ui.home.HospitalFragment"
         android:label="fragment_hospital"
         tools:layout="@layout/fragment_hospital" />
     <fragment
         android:id="@+id/parkingFragment"
-        android:name="com.example.busanapp.ParkingFragment"
+        android:name="com.example.busanapp.ui.home.ParkingFragment"
         android:label="fragment_parking"
         tools:layout="@layout/fragment_parking" />
     <fragment
         android:id="@+id/busFragment"
-        android:name="com.example.busanapp.BusFragment"
+        android:name="com.example.busanapp.ui.home.BusFragment"
         android:label="fragment_bus"
         tools:layout="@layout/fragment_bus" />
 
