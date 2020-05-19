@@ -28,6 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
+
     </LinearLayout>
 
     <com.google.android.material.navigation.NavigationView
@@ -40,5 +41,14 @@
         app:itemTextColor="#FFFFFF"
         app:headerLayout="@layout/nav_header_main"
         app:menu="@menu/activity_main_drawer" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    </androidx.viewpager.widget.ViewPager>
+
 
 </androidx.drawerlayout.widget.DrawerLayout>
